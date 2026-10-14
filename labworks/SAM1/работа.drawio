@@ -1,0 +1,90 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/25.0.2 Chrome/128.0.6613.186 Electron/32.2.5 Safari/537.36" version="25.0.2">
+  <diagram name="Страница — 1" id="e4lK3mawSuor-VMy1vG8">
+    <mxGraphModel dx="1646" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WmVGTr5nPdMlOHRPV82f-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;«устройство»&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Сервер&lt;/font&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="220" y="100" width="390" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;«устройство»&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Компьютер&lt;/font&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="197" y="340" width="193" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-3" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;«среда выполнения»&lt;/font&gt;&lt;div&gt;.NET Runtime&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="210" y="400" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-4" value="&lt;span style=&quot;text-decoration-line: underline;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;«компонент»&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;HTML 5&lt;/font&gt;&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="460" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-9" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;«устройство»&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Смартфон&lt;/span&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="100" width="193" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;«среда выполнения»&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Android Runtime&lt;/span&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-33.5" y="155" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-11" value="&lt;span style=&quot;text-decoration-line: underline;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;«компонент»&lt;/font&gt;&lt;/span&gt;&lt;div&gt;app.exe&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="460" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-12" value="&lt;span style=&quot;text-decoration-line: underline;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;«компонент»&lt;/font&gt;&lt;/span&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;app.apk&lt;/font&gt;&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-10" y="210" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-13" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="450" y="150" width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-5" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;«среда выполнения»&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;MySql&lt;/span&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1ajMZPgqphoJqBUKQFih-13">
+          <mxGeometry width="140" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-6" value="&lt;span style=&quot;text-decoration-line: underline;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;«компонент»&lt;/font&gt;&lt;/span&gt;&lt;div&gt;granit_db&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1ajMZPgqphoJqBUKQFih-13">
+          <mxGeometry x="10" y="60" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-2" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;«среда выполнения»&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;.NET Runtime&lt;/span&gt;&lt;/div&gt;" style="verticalAlign=top;align=center;spacingTop=8;spacingLeft=2;spacingRight=12;shape=cube;size=10;direction=south;fontStyle=4;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="240" y="150" width="150" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;endArrow=block;endFill=1;" edge="1" parent="1" source="1ajMZPgqphoJqBUKQFih-7" target="1ajMZPgqphoJqBUKQFih-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-7" value="&lt;span style=&quot;text-decoration-line: underline;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;«компонент»&lt;/font&gt;&lt;/span&gt;&lt;div&gt;granit_api.dll&lt;/div&gt;" style="shape=module;align=left;spacingLeft=20;align=center;verticalAlign=top;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="263" y="210" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;endArrow=block;endFill=1;" edge="1" parent="1" source="1ajMZPgqphoJqBUKQFih-12" target="1ajMZPgqphoJqBUKQFih-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="234.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0;entryDx=65;entryDy=140;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" target="1ajMZPgqphoJqBUKQFih-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="215" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="390" y="215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-30" value="TCP/IP" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1ajMZPgqphoJqBUKQFih-23">
+          <mxGeometry x="0.4014" y="-2" relative="1" as="geometry">
+            <mxPoint x="-12" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=90;exitDy=0;exitPerimeter=0;entryX=0;entryY=0;entryDx=100;entryDy=390;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="1ajMZPgqphoJqBUKQFih-9" target="WmVGTr5nPdMlOHRPV82f-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="143" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-26" value="HTTPS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1ajMZPgqphoJqBUKQFih-25">
+          <mxGeometry x="0.1813" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=91.5;exitPerimeter=0;entryX=0.997;entryY=0.796;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" edge="1" parent="1" source="1ajMZPgqphoJqBUKQFih-1" target="WmVGTr5nPdMlOHRPV82f-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1ajMZPgqphoJqBUKQFih-29" value="HTTPS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1ajMZPgqphoJqBUKQFih-27">
+          <mxGeometry x="-0.2636" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
