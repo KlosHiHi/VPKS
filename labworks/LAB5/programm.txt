@@ -1,0 +1,119 @@
+using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Distributed;
+
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<ApplicationContext>(options => options.UseSqlite("Data Source=app.db"));
+builder.Services.AddTransient<UserService>();
+
+builder.Services.AddStackExchangeRedisCache(
+    options =>
+    {
+        options.Configuration = "localhost";
+        options.InstanceName = "test";
+});
+
+var app = builder.Build();
+
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+
+app.MapGet("/", () => "Hello, Word!");
+
+app.MapGet("/user/{id}", async (int id, UserService userService) =>
+{
+    User? user = await userService.GetUser(id);
+    if (user != null) return JsonSerializer.Serialize(user);
+    return "User not found!!!";
+});
+
+app.MapDelete("/user/{id}", async (int id, UserService userService) =>
+{
+    User? user = await userService.DeleteUser(id);
+    if (user != null) return JsonSerializer.Serialize(user);
+    return "User not found!!!";
+});
+
+app.Run();
+
+public class User
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public int Age { get; set; }
+}
+
+public class ApplicationContext : DbContext
+{
+    public DbSet<User> Users { get; set; }
+    public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) =>
+       Database.EnsureCreated();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+       modelBuilder.Entity<User>().HasData(
+            new User {Id = 1, Name = "Alina", Age = 23 },
+            new User { Id = 2, Name = "Irina", Age = 26 },
+            new User { Id = 3, Name = "Oleg", Age = 28 }
+       );
+    }
+}
+
+public class UserService
+{
+    ApplicationContext db;
+    IDistributedCache cache;
+
+    public UserService(ApplicationContext db, IDistributedCache cache)
+    {
+        this.db = db;
+        this.cache = cache;
+    }
+
+    public async Task<User?> GetUser(int id)
+    {
+        User? user = null;
+
+        var userString = await cache.GetStringAsync(id.ToString());  // Получение из кэша
+
+        if (userString != null) user = JsonSerializer.Deserialize<User>(userString); // Если есть кэш десерилизируем
+
+        if (user == null)
+        {
+            user = await db.Users.FindAsync(id); // Поиск объекта в БД
+
+            if (user != null)
+            {
+                Console.WriteLine($"{user.Name} извлечен из БД");
+                userString = JsonSerializer.Serialize(user); // Сериализация в JSON объекта
+
+                await cache.SetStringAsync(user.Id.ToString(), userString, new DistributedCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(2)
+                }); // Кэширование с установкой времени жизни кэша
+            }
+        }
+        else
+        {
+            Console.WriteLine($"{user.Name} извлечен из кэша");
+        }
+
+        return user;
+    }
+
+    public async Task<User?> DeleteUser(int id)
+    {
+        User? user = await db.Users.FindAsync(id);
+        if (user != null) db.Users.Remove(user);
+        //cache.Remove(id.ToString());
+        await db.SaveChangesAsync();
+        return user;
+    }
+
+}
